@@ -30,7 +30,6 @@ if (process.argv[2] === "movie-this") {
         console.log(response.data.Year);
         console.log(response.data.imdbRating);
         console.log(response.data.Ratings[1].Value);
-        console.log(response.data.Ratings[1].Value);
         console.log(response.data.Language);
         console.log(response.data.Plot);
         console.log(response.data.Country);
@@ -46,7 +45,7 @@ if (process.argv[2] === "concert-this") {
 
     axios.get(queryUrl).then( 
     function(response) {
-        console.log(response.data[0].lineup[0]);
+        console.log(response.data);
        
 
       }
